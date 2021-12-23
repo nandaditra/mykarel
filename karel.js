@@ -35,3 +35,39 @@ function pindah() {
     putBeeper();
 
 }
+
+/** This Function to get Karel chess Problem **/
+
+function main(){
+   putBeeper();
+   moveUpThreeBeeper();
+   moveUpTwoBeeper();
+   moveUpThreeBeeper();
+   moveUpTwoBeeper();
+   moveUpThreeBeeper();
+}
+
+function moveUpThreeBeeper() {
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+}
+
+function moveUpTwoBeeper() {
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    putBeeper();
+    move();
+    move();
+    putBeeper();
+    move();
+    turnRight();
+    move();
+    putBeeper();
+    turnRight();
+}
